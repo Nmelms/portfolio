@@ -22,13 +22,33 @@ export default function NavBar() {
       {show && (
         <nav className="dropDownContent">
           <ul>
-            <Link activeClass="active" smooth spy to="home">
+            <Link
+              onClick={handleClick}
+              activeClass="active"
+              smooth
+              spy
+              to="home"
+            >
               <li>home</li>
             </Link>
-            <Link offset={-42} activeClass="active" smooth spy to="about">
+            <Link
+              onClick={handleClick}
+              offset={-42}
+              activeClass="active"
+              smooth
+              spy
+              to="about"
+            >
               <li>about</li>
             </Link>
-            <Link offset={-42} activeClass="active" smooth spy to="projects">
+            <Link
+              onClick={handleClick}
+              offset={-42}
+              activeClass="active"
+              smooth
+              spy
+              to="projects"
+            >
               <li>projects</li>
             </Link>
           </ul>
