@@ -1,5 +1,8 @@
 import NavBar from "./NavBar";
-import { render, screen, fireEvent } from "@testing-library/react";
+import App from "../App.js";
+import { cleanup, render, screen, fireEvent } from "@testing-library/react";
+
+afterEach(cleanup);
 
 test("renders a  hamburger icon in the NavBar", () => {
   const { container } = render(<NavBar />);
@@ -13,3 +16,13 @@ test("when click hamburger icon dropdown menu apperas", () => {
   const dropDownContent = container.querySelector(".dropDownContent");
   expect(dropDownContent).toBeVisible();
 });
+
+// test("corret page appears when nav item is clicked...this test does not corretly test", () => {
+//   const { container } = render(<App />);
+//   fireEvent.click(screen.getByTitle("hamburgerMenu"));
+//   const dropDownContent = container.querySelector(".dropDownContent");
+//   const navItem = screen.getByText("about");
+//   fireEvent.click(navItem);
+//   const aboutMe = screen.getByText("About");
+//   expect(aboutMe).toBeVisible();
+// });

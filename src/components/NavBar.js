@@ -29,7 +29,7 @@ export default function NavBar() {
               spy
               to="home"
             >
-              <li>home</li>
+              <li className="navLink">home</li>
             </Link>
             <Link
               onClick={handleClick}
@@ -39,7 +39,7 @@ export default function NavBar() {
               spy
               to="about"
             >
-              <li>about</li>
+              <li className="navLink">about</li>
             </Link>
             <Link
               onClick={handleClick}
@@ -49,7 +49,7 @@ export default function NavBar() {
               spy
               to="projects"
             >
-              <li>projects</li>
+              <li className="navLink">projects</li>
             </Link>
           </ul>
         </nav>

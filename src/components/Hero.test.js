@@ -6,3 +6,9 @@ test("Renders Hero With Name displayed", () => {
   const text = screen.getByText("Nick Melms");
   expect(text).toBeInTheDocument();
 });
+
+test("Renders a button", () => {
+  render(<Hero />);
+  const button = screen.getByRole("button", { name: /scroll Down/i });
+  expect(button).toBeInTheDocument();
+});
