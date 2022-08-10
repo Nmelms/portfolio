@@ -154,12 +154,13 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   background-color: var(--main-bg-color);
 }
 .aboutMeTitle {
   padding-top: 8vh;
-  color: white;
+  color: var(--main-text-color);
 }
 .selfie {
   margin-top: 5vh;
@@ -171,6 +172,8 @@ p {
   padding: 1rem;
 }
 .tech {
+  padding-bottom: 2rem;
+  justify-self: flex-end;
   text-align: center;
   color: var(--main-text-color);
   display: flex;
@@ -179,6 +182,7 @@ p {
   width: 100vw;
 }
 .logos {
+  margin: 2vh 0 5vh 0;
   padding: 1rem;
   display: flex;
   width: 100%;

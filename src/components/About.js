@@ -28,6 +28,9 @@ export default function About() {
           <img className="techLogo" src={htmlSVG} />
           <img className="techLogo" src={cssSVG} />
         </div>
+        <p>
+          Im constantly learning and ready to learn new technologies as needed
+        </p>
       </div>
     </div>
   );
