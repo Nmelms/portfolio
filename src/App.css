@@ -20,18 +20,20 @@ h1 {
   display: flex;
   align-items: center;
 }
-.selfie {
-  margin-top: 20vh;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.nameAndTitle > h1 {
+  margin-bottom: 2rem;
 }
+
 .nameAndTitle {
+  padding-top: 40vh;
   display: flex;
   flex-direction: column;
+  justify-self: center;
   align-items: center;
 }
+
 .anglesDown {
+  margin-bottom: auto;
   color: #f71735;
   margin-bottom: 5vh;
   animation-name: anglesDown;
@@ -78,9 +80,6 @@ h1 {
   }
 }
 
-.aboutMe {
-  height: 100vh;
-}
 .projects {
   height: 100vh;
   background-color: black;
@@ -102,29 +101,28 @@ h1 {
   padding-bottom: 0.5rem;
   width: fit-content;
 }
-.navlink:before {
+
+.navLink:after {
+  display: block;
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 50%; /* or 100px */
-  border-bottom: 1px solid magenta;
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
 }
-.navLink:hover {
-  animation-name: grow;
-  border-bottom: 2px solid red;
-  cursor: pointer;
+
+.navLink:hover:after {
+  transform: scaleX(1);
+  transform-origin: 100% 50%;
+}
+.active {
   color: var(--main-hover-color);
 }
-@keyframes grow {
-  from {
-    border-bottom: 2px solid red;
-  }
-  to {
-    border-bottom: 2px solid red;
-  }
+
+.navLink:hover {
+  cursor: pointer;
 }
+
 .dropDownContent {
   border-bottom: 2px solid #f71735;
   border-top: 2px solid #f71735;
@@ -148,4 +146,21 @@ h1 {
 }
 .hamburgerMenu:hover {
   cursor: pointer;
+}
+.aboutMe {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+}
+.aboutMeTitle {
+  padding-top: 8vh;
+  color: white;
+}
+.selfie {
+  margin-top: 5vh;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }

@@ -7,6 +7,10 @@ export default function NavBar() {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
+    var Scroll = require("react-scroll");
+    var scroll = Scroll.animateScroll;
+
+    scroll.scrollMore(1);
   };
 
   return (
@@ -33,7 +37,6 @@ export default function NavBar() {
             </Link>
             <Link
               onClick={handleClick}
-              offset={-42}
               activeClass="active"
               smooth
               spy
@@ -43,7 +46,6 @@ export default function NavBar() {
             </Link>
             <Link
               onClick={handleClick}
-              offset={-42}
               activeClass="active"
               smooth
               spy
