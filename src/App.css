@@ -5,6 +5,7 @@
 :root {
   --main-bg-color: #011627;
   --main-hover-color: #ff9f1c;
+  --man-border-color: #f71735;
   --main-text-color: #41ead4;
 }
 h1 {
@@ -203,12 +204,14 @@ p {
   color: var(--main-text-color);
 }
 .card {
+  color: white;
+  border: white 2px solid;
   width: 70vw;
   height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: #010b13;
 }
 .cardImg {
   width: 100%;
@@ -218,9 +221,16 @@ p {
 .linkIcon {
   width: fit-content;
   min-height: 10%;
-  max-height: 12%;
+  max-height: 12%s;
   padding-bottom: 1rem;
 }
 .linkIcon > img {
   height: 100%;
+  color: white;
+}
+.faLinkIcon {
+  color: white;
+}
+.githubIcon {
+  color: white;
 }

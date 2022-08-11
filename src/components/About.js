@@ -5,6 +5,7 @@ import reactSVG from "../assets/react.svg";
 import htmlSVG from "../assets/html.svg";
 import cssSVG from "../assets/css.svg";
 import firebaseSVG from "../assets/firebase.svg";
+import jestSVG from "../assets/jest.svg";
 
 export default function About() {
   return (
@@ -24,6 +25,7 @@ export default function About() {
         <div className="logos">
           <img className="techLogo" src={reactSVG} />
           <img className="techLogo" src={jsSVG} />
+          <img className="techLogo" src={jestSVG} />
           <img className="techLogo" src={firebaseSVG} />
           <img className="techLogo" src={htmlSVG} />
           <img className="techLogo" src={cssSVG} />
