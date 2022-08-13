@@ -20,6 +20,7 @@ p {
   flex-direction: column;
   background-color: var(--main-bg-color);
   height: 100vh;
+  min-height: 100vh;
   color: #41ead4;
   display: flex;
   align-items: center;
@@ -37,7 +38,7 @@ p {
 }
 
 .anglesDown {
-  margin-bottom: auto;
+  padding-bottom: 10vh;
   color: #f71735;
   margin-bottom: 5vh;
   animation-name: anglesDown;
@@ -85,7 +86,8 @@ p {
 }
 
 .projects {
-  height: 100vh;
+  padding-bottom: 5vh;
+  height: fit-content;
   background-color: black;
 }
 
@@ -94,10 +96,12 @@ p {
   flex-direction: column;
   color: white;
   width: 100vw;
+  z-index: 100;
   height: 5vh;
   background-color: var(--main-bg-color);
   position: fixed;
-  z-index: 25;
+  top: 0;
+  z-index: 100;
   border-bottom: 2px solid #f71735;
 }
 .navLink {
@@ -121,26 +125,62 @@ p {
 }
 .active {
   color: var(--main-hover-color);
+  border-bottom: 2px solid red !important;
 }
 
 .navLink:hover {
   cursor: pointer;
 }
 
-.dropDownContent {
+.open {
+  color: white;
+  position: fixed;
+  padding: 1rem;
+  border-bottom: 2px solid #f71735;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background: var(--main-bg-color);
+  gap: 0.25rem;
+  z-index: 1;
+  animation: open 1s ease-in-out forwards;
+}
+.closed {
+  color: white;
+  height: fit-content;
+  position: fixed;
+  padding: 1rem;
   border-bottom: 2px solid #f71735;
   border-top: 2px solid #f71735;
   display: flex;
   flex-direction: column;
   width: 100vw;
   background: var(--main-bg-color);
-  position: relative;
-  padding: 1rem;
   gap: 0.25rem;
+  z-index: 1;
+  animation: closed 1s ease-in-out forwards;
+}
+@keyframes open {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(5vh);
+  }
+}
+@keyframes closed {
+  0% {
+    transform: translateY(5vh);
+  }
+  100% {
+    transform: translateY(-5rem);
+  }
 }
 
 .hamburgerMenu {
   display: flex;
+  top: 0.25rem;
+  right: 0;
   align-items: center;
   padding-right: 1rem;
   justify-content: center;
@@ -205,6 +245,8 @@ p {
   color: var(--main-text-color);
 }
 .card {
+  padding: 0.5rem;
+  text-align: center;
   margin-top: 5vh;
   border-radius: 15px;
   color: #60b5fb;

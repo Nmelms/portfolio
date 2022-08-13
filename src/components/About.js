@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className="aboutMe">
       <h1 className="aboutMeTitle">A little about me..</h1>
-      <img className="selfie" src={pic} />
+      <img alt="me" className="selfie" src={pic} />
       <div className="aboutMeText">
         <p>
           Im Nick, a front-end webdeveloper. I enjoy making responsive websites
@@ -23,12 +23,12 @@ export default function About() {
       <div className="tech">
         <h2>Technologies</h2>
         <div className="logos">
-          <img className="techLogo" src={reactSVG} />
-          <img className="techLogo" src={jsSVG} />
-          <img className="techLogo" src={jestSVG} />
-          <img className="techLogo" src={firebaseSVG} />
-          <img className="techLogo" src={htmlSVG} />
-          <img className="techLogo" src={cssSVG} />
+          <img alt="react " className="techLogo" src={reactSVG} />
+          <img alt="javascript " className="techLogo" src={jsSVG} />
+          <img alt="jest " className="techLogo" src={jestSVG} />
+          <img alt="firebase " className="techLogo" src={firebaseSVG} />
+          <img alt="html " className="techLogo" src={htmlSVG} />
+          <img alt="css " className="techLogo" src={cssSVG} />
         </div>
         <p>
           Im constantly learning and ready to learn new technologies as needed

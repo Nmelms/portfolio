@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 export default function Hero() {
   const handleClick = () => {};
   return (
-    <div className="hero">
+    <div style={{ height: "window.innerHeight" }} className="hero">
       <div className="nameAndTitle">
         <h1 className="h1">Nick Melms</h1>
         <h2 className="text-effect">Front-End Developer</h2>
