@@ -2,14 +2,14 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-export default function DropDown({ name, setName }) {
+export default function DropDown({ name, setName, dropDownRef }) {
   const handleClick = () => {
     setTimeout(() => {
       setName("closed");
     }, 500);
   };
   return (
-    <nav className={name}>
+    <nav ref={dropDownRef} className={name}>
       <ul>
         <Link onClick={handleClick} activeClass="active" smooth spy to="home">
           <li className="navLink">home</li>

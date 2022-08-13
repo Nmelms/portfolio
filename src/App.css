@@ -152,7 +152,7 @@ p {
   padding: 1rem;
   border-bottom: 2px solid #f71735;
   border-top: 2px solid #f71735;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100vw;
   background: var(--main-bg-color);
