@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <>
-      <DropDown name={name} />
+      <DropDown name={name} setName={setName} />
       <div className="navBar">
         <div className="hamburgerMenu">
           <FontAwesomeIcon

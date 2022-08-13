@@ -2,9 +2,11 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-export default function DropDown({ name }) {
+export default function DropDown({ name, setName }) {
   const handleClick = () => {
-    console.log("click");
+    setTimeout(() => {
+      setName("closed");
+    }, 500);
   };
   return (
     <nav className={name}>
