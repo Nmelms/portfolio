@@ -2,11 +2,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: var(--main-bg-color);
+}
 :root {
   --main-bg-color: #011627;
   --main-hover-color: #ff9f1c;
   --man-border-color: #f71735;
   --main-text-color: #41ead4;
+}
+.desktopLinks {
+  display: none;
+}
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 h1 {
   font-size: 2rem;
@@ -16,7 +26,6 @@ p {
 }
 .hero {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   background-color: var(--main-bg-color);
   height: 100vh;
@@ -25,6 +34,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 .nameAndTitle > h1 {
   margin-bottom: 2rem;
 }
@@ -38,7 +48,7 @@ p {
 }
 
 .anglesDown {
-  padding-bottom: 10vh;
+  padding-top: 12vh;
   color: #f71735;
   margin-bottom: 5vh;
   animation-name: anglesDown;
@@ -95,7 +105,7 @@ p {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 100vw;
+  min-width: 100vw;
   z-index: 100;
   height: 5vh;
   background-color: var(--main-bg-color);
@@ -125,7 +135,6 @@ p {
 }
 .active {
   color: var(--main-hover-color);
-  border-bottom: 2px solid red !important;
 }
 
 .navLink:hover {
@@ -143,7 +152,7 @@ p {
   background: var(--main-bg-color);
   gap: 0.25rem;
   z-index: 1;
-  animation: open 0.75s ease-in-out forwards;
+  animation: open 0.75s ease-in forwards;
 }
 .closed {
   color: white;
@@ -158,11 +167,11 @@ p {
   background: var(--main-bg-color);
   gap: 0.25rem;
   z-index: 1;
-  animation: closed 0.75s ease-in-out forwards;
+  animation: closed 0.75s ease-in forwards;
 }
 @keyframes open {
   0% {
-    transform: translateY(-5rem);
+    transform: translateY(-8rem);
   }
   100% {
     transform: translateY(5vh);
@@ -173,7 +182,7 @@ p {
     transform: translateY(5vh);
   }
   100% {
-    transform: translateY(-5rem);
+    transform: translateY(-8rem);
   }
 }
 
@@ -234,7 +243,7 @@ p {
   width: auto;
 }
 .projects {
-  padding-top: 5vh;
+  padding-top: 8vh;
   background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
@@ -289,10 +298,9 @@ p {
 }
 .contactIcons {
   display: flex;
+  padding-top: 5rem;
   justify-content: space-between;
   width: 40%;
-  margin-left: 4vw;
-  right: 0;
 }
 .footer {
   background-color: black;
@@ -309,4 +317,125 @@ p {
 }
 .icon {
   color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+
+  .text-effect {
+    font-size: 5vw;
+  }
+  .aboutMeText {
+    max-width: 80vw;
+    padding: 2rem;
+    font-size: max(3vw, 1rem);
+  }
+  .desktopLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .navBar {
+    height: fit-content;
+  }
+
+  .navLink {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .ul {
+    display: hidden !important;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .aboutMeTitle {
+    font-size: 5vw;
+  }
+  .contactIcons {
+    margin-bottom: 5vh;
+  }
+  .tech {
+    max-width: 80vw;
+  }
+  .projectsTitle {
+    width: 100vw;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .card {
+    max-width: 400px;
+    margin: 4rem 2rem 2rem 2rem;
+  }
+  .techText {
+    font-size: 2.5vw;
+  }
+  .selfie {
+    height: auto;
+    width: 30vw;
+    min-height: 200px;
+    min-width: 200px;
+  }
+  .cardTitle {
+    font-size: 2rem;
+  }
+  .projects {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .h1 {
+    font-size: 80px;
+  }
+  .text-effect {
+    font-size: 55px;
+  }
+  .hero {
+    max-width: 1440px;
+  }
+
+  .nameAndTitle {
+    align-items: flex-start;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  .text-effect {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin-left: 0;
+    margin-right: auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  .contactIcons {
+    flex-direction: column;
+    position: absolute;
+    padding-right: 2rem;
+    gap: 2rem;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    align-self: end;
+    align-items: flex-end;
+  }
+  .anglesDown {
+    margin-top: 15vh;
+  }
 }

@@ -7,8 +7,8 @@ test("Renders Hero With Name displayed", () => {
   expect(text).toBeInTheDocument();
 });
 
-test("Renders a button", () => {
+test("Renders a icon", () => {
   render(<Hero />);
-  const button = screen.getByRole("button", { name: /scroll Down/i });
+  const button = screen.getByTestId("anglesDown");
   expect(button).toBeInTheDocument();
 });

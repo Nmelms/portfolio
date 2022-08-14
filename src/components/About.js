@@ -15,9 +15,9 @@ export default function About() {
       <div className="aboutMeText">
         <p>
           Im Nick, a front-end webdeveloper. I enjoy making responsive websites
-          that look good and are easy to use. i enjoy keeping up with the latest
-          technologies but use React to build the majority of my sites. When im
-          not coding after work i enjoy the outdoors and flying FPV drones.
+          that look good and are easy to use. I enjoy keeping up with the latest
+          technologies and use React to build the majority of my sites. When im
+          not coding i enjoy the exploring the outdoors.
         </p>
       </div>
       <div className="tech">
@@ -30,7 +30,7 @@ export default function About() {
           <img alt="html " className="techLogo" src={htmlSVG} />
           <img alt="css " className="techLogo" src={cssSVG} />
         </div>
-        <p>
+        <p className="techText">
           Im constantly learning and ready to learn new technologies as needed
         </p>
       </div>

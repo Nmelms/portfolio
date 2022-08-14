@@ -9,12 +9,27 @@ export default function DropDown({ name, setName, dropDownRef }) {
     }, 500);
   };
   return (
-    <nav ref={dropDownRef} className={name}>
+    <nav ref={dropDownRef} className={`ul ${name}`}>
       <ul>
-        <Link onClick={handleClick} activeClass="active" smooth spy to="home">
+        <Link
+          title="home link"
+          onClick={handleClick}
+          activeClass="active"
+          smooth
+          spy
+          to="home"
+        >
           <li className="navLink">home</li>
         </Link>
-        <Link onClick={handleClick} activeClass="active" smooth spy to="about">
+        <Link
+          onClick={handleClick}
+          offset={5}
+          activeClass="active"
+          smooth
+          spy
+          to="about"
+          title="about link"
+        >
           <li className="navLink">about</li>
         </Link>
         <Link
@@ -23,6 +38,8 @@ export default function DropDown({ name, setName, dropDownRef }) {
           smooth
           spy
           to="projects"
+          offset={5}
+          title="projects link"
         >
           <li className="navLink">projects</li>
         </Link>

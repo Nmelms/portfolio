@@ -13,7 +13,7 @@ test("renders a  hamburger icon in the NavBar", () => {
 test("when click hamburger icon dropdown menu apperas", () => {
   const { container } = render(<NavBar />);
   fireEvent.click(screen.getByTitle("hamburgerMenu"));
-  const dropDownContent = container.querySelector(".dropDownContent");
+  const dropDownContent = container.querySelector(".open");
   expect(dropDownContent).toBeVisible();
 });
 
