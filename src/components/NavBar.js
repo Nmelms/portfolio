@@ -32,7 +32,7 @@ export default function NavBar() {
                 <li className="navLink">home</li>
               </Link>
               <Link
-                offset={2}
+                // offset={2}
                 activeClass="active"
                 smooth
                 spy
@@ -46,7 +46,7 @@ export default function NavBar() {
                 smooth
                 spy
                 to="projects"
-                offset={2}
+                // offset={2}
                 title="projects link"
               >
                 <li className="navLink">projects</li>
