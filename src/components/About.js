@@ -10,18 +10,18 @@ import jestSVG from "../assets/jest.svg";
 export default function About() {
   return (
     <div className="aboutMe">
-      <h1 className="aboutMeTitle">A little about me..</h1>
+      <h1 className="aboutMeTitle">A little about me...</h1>
       <img alt="me" className="selfie" src={pic} />
       <div className="aboutMeText">
         <p>
-          Im Nick, a front-end webdeveloper. I enjoy making responsive websites
-          that look good and are easy to use. I enjoy keeping up with the latest
-          technologies and use React to build the majority of my sites. When im
-          not coding i enjoy the exploring the outdoors.
+          I'm Nick, a front-end webdeveloper. I make responsive webapps that
+          look good and are easy to use. I enjoy keeping up with the latest
+          technologies and use React to build the majority of my sites. When I'm
+          not coding, I enjoy exploring the outdoors.
         </p>
       </div>
       <div className="tech">
-        <h2>Technologies</h2>
+        <h1>Technologies</h1>
         <div className="logos">
           <img alt="react " className="techLogo" src={reactSVG} />
           <img alt="javascript " className="techLogo" src={jsSVG} />

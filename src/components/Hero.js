@@ -23,7 +23,14 @@ export default function Hero() {
           <FontAwesomeIcon size="2x" icon={faLinkedin} />
         </a>
       </div>
-      <Link onClick={handleClick} activeClass="active" smooth spy to="about">
+      <Link
+        onClick={handleClick}
+        offset={5}
+        activeClass="active"
+        smooth
+        spy
+        to="about"
+      >
         <FontAwesomeIcon
           data-testid="anglesDown"
           onClick={handleClick}

@@ -14,15 +14,15 @@ body {
 .desktopLinks {
   display: none;
 }
-.App {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 h1 {
   font-size: 2rem;
 }
 p {
   color: white;
+}
+.home {
+  min-height: min-content;
 }
 .hero {
   display: flex;
@@ -99,6 +99,7 @@ p {
   padding-bottom: 5vh;
   height: fit-content;
   background-color: black;
+  min-height: fit-content;
 }
 
 .navBar {
@@ -111,7 +112,6 @@ p {
   background-color: var(--main-bg-color);
   position: fixed;
   top: 0;
-  z-index: 100;
   border-bottom: 2px solid #f71735;
 }
 .navLink {
@@ -201,6 +201,7 @@ p {
   cursor: pointer;
 }
 .aboutMe {
+  min-height: fit-content;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -343,6 +344,7 @@ p {
   }
   .navBar {
     height: fit-content;
+    justify-content: flex-end;
   }
 
   .navLink {
@@ -400,14 +402,39 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-  .h1 {
+  h1 {
+    font-size: 55px !important;
+  }
+  h2 {
     font-size: 80px;
   }
   .text-effect {
     font-size: 55px;
   }
+  p {
+    font-size: 1.5rem;
+  }
+  .selfie {
+    width: auto;
+    height: 100%;
+    max-height: 400px;
+  }
+  .logos {
+    max-width: 800px;
+    align-self: center;
+  }
+
+  .aboutMeText {
+    max-width: 80vw;
+    text-align: center;
+  }
+  .techText {
+    max-width: 80vw;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .hero {
-    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .nameAndTitle {
