@@ -21,7 +21,7 @@ export default function About() {
         </p>
       </div>
       <div className="tech">
-        <h1>Technologies</h1>
+        <h1 className="techTitle">Technologies</h1>
         <div className="logos">
           <img alt="react " className="techLogo" src={reactSVG} />
           <img alt="javascript " className="techLogo" src={jsSVG} />

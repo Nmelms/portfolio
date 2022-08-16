@@ -29,7 +29,7 @@ export default function NavBar() {
           <nav>
             <ul>
               <Link title="home link" activeClass="active" smooth spy to="home">
-                <li className="navLink">home</li>
+                <li className="navLink">Home</li>
               </Link>
               <Link
                 // offset={2}
@@ -39,7 +39,7 @@ export default function NavBar() {
                 to="about"
                 title="about link"
               >
-                <li className="navLink">about</li>
+                <li className="navLink">About</li>
               </Link>
               <Link
                 activeClass="active"
@@ -49,7 +49,7 @@ export default function NavBar() {
                 // offset={2}
                 title="projects link"
               >
-                <li className="navLink">projects</li>
+                <li className="navLink">Projects</li>
               </Link>
             </ul>
           </nav>

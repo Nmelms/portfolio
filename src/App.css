@@ -247,12 +247,12 @@ p {
   background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 10vh;
 }
 .projectsTitle {
-  padding-top: 5vh;
   color: var(--main-text-color);
+  align-self: flex-start;
+  margin: 0 auto;
 }
 .card {
   padding: 0.5rem;
@@ -345,6 +345,9 @@ p {
     height: fit-content;
     justify-content: flex-end;
   }
+  .techTitle {
+    font-size: 5vw;
+  }
 
   .navLink {
     display: inline-block;
@@ -361,7 +364,7 @@ p {
   }
 
   .aboutMeTitle {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .contactIcons {
     margin-bottom: 5vh;
@@ -371,11 +374,11 @@ p {
   }
   .projectsTitle {
     width: 100vw;
+    font-size: 5vw;
   }
   .projects {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: center;
   }
@@ -464,8 +467,19 @@ p {
   .anglesDown {
     margin-top: 15vh;
   }
+  .card {
+    position: relative;
+    top: 0;
+  }
+  .projectsTitle {
+    position: relative;
+  }
+
+  .projects {
+    display: flex;
+  }
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 480px) {
   .aboutMe {
     padding-top: 10vh;
     height: fit-content;

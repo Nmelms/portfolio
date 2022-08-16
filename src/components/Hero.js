@@ -19,7 +19,10 @@ export default function Hero() {
         <a className="icon" href="https://github.com/Nmelms">
           <FontAwesomeIcon size="2x" icon={faGithub} />
         </a>
-        <a className="icon" href="www.linkdin.com">
+        <a
+          className="icon"
+          href="https://www.linkedin.com/in/nick-melms-b66300223/"
+        >
           <FontAwesomeIcon size="2x" icon={faLinkedin} />
         </a>
       </div>

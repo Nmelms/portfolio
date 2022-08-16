@@ -22,6 +22,8 @@ export default function Project() {
         text="Planet facts site was built using React"
         img={planetScreenshot}
       />
+
+      <p>I also used React to build this portfolio site.</p>
     </div>
   );
 }
