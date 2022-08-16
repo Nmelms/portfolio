@@ -10,14 +10,14 @@ import jestSVG from "../assets/jest.svg";
 export default function About() {
   return (
     <div className="aboutMe">
-      <h1 className="aboutMeTitle">A little about me...</h1>
+      <h1 className="aboutMeTitle">A Little About Me...</h1>
       <img alt="me" className="selfie" src={pic} />
       <div className="aboutMeText">
         <p>
-          I'm Nick, a front-end webdeveloper. I make responsive webapps that
-          look good and are easy to use. I enjoy keeping up with the latest
-          technologies and use React to build the majority of my sites. When I'm
-          not coding, I enjoy exploring the outdoors.
+          I'm Nick, a front-end web developer. I make responsive web
+          applications that look good and are easy to use. I enjoy keeping up
+          with the latest technologies and use React to build the majority of my
+          sites. When I'm not coding, I enjoy exploring the outdoors.
         </p>
       </div>
       <div className="tech">
