@@ -214,8 +214,8 @@ p {
 }
 .selfie {
   margin-top: 5vh;
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: auto;
   border-radius: 50%;
 }
 .aboutMeText {
@@ -333,7 +333,7 @@ p {
   .aboutMeText {
     max-width: 80vw;
     padding: 2rem;
-    font-size: max(3vw, 1rem);
+    font-size: max(1.5rem, 1rem);
   }
   .desktopLinks {
     display: flex;
@@ -390,8 +390,8 @@ p {
     font-size: 2.5vw;
   }
   .selfie {
-    height: auto;
-    width: 30vw;
+    height: 100%;
+    width: auto;
     min-height: 200px;
     min-width: 200px;
   }
