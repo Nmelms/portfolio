@@ -96,6 +96,9 @@ p {
 
 .projects {
   padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: fit-content;
   background-color: black;
   min-height: fit-content;
@@ -117,6 +120,9 @@ p {
   list-style-type: none;
   padding-bottom: 0.5rem;
   width: fit-content;
+}
+.techText {
+  padding: 0 1rem 0 1rem;
 }
 
 .navLink:after {

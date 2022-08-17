@@ -10,14 +10,14 @@ export default function Project() {
 
       <Card
         title="Invoice App"
-        liveLink="https://thriving-gumption-ff6d04.netlify.app/"
+        liveLink="https://nmelmsinvoice.netlify.app/"
         text="This CRUD app was built using React and firebase as a backend"
         githubLink="https://github.com/Nmelms/Invoice-App"
         img={invoiceScreenshot}
       />
       <Card
         title="Planet Facts"
-        liveLink="https://cheerful-blancmange-8ec633.netlify.app/"
+        liveLink="https://nmelmsplanetfacts.netlify.app/"
         githubLink="https://github.com/Nmelms/planets"
         text="Planet facts site was built using React"
         img={planetScreenshot}
