@@ -215,6 +215,7 @@ p {
 .selfie {
   margin-top: 5vh;
   height: 100%;
+  max-height: 300px;
   width: auto;
   border-radius: 50%;
 }
