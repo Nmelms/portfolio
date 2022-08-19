@@ -23,7 +23,9 @@ export default function Project() {
         img={planetScreenshot}
       />
 
-      <p>I also used React to build this portfolio site.</p>
+      <p style={{ paddingTop: "1rem" }}>
+        React was also used to build this portfolio site
+      </p>
     </div>
   );
 }
