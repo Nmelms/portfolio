@@ -474,7 +474,8 @@ p {
     align-items: flex-end;
   }
   .anglesDown {
-    margin-top: 15vh;
+    position: absolute;
+    bottom: 7%;
   }
   .card {
     position: relative;
