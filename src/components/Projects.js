@@ -7,7 +7,6 @@ export default function Project() {
   return (
     <div className="projects">
       <h1 className="projectsTitle">Projects</h1>
-
       <Card
         title="Invoice App"
         liveLink="https://nmelmsinvoice.netlify.app/"
@@ -22,10 +21,6 @@ export default function Project() {
         text="Planet facts site was built using React"
         img={planetScreenshot}
       />
-
-      <p style={{ paddingTop: "1rem" }}>
-        React was also used to build this portfolio site
-      </p>
     </div>
   );
 }
