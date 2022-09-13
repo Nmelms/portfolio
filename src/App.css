@@ -209,6 +209,7 @@ p {
   cursor: pointer;
 }
 .aboutMe {
+  padding-top: 2rem;
   min-height: 100vh;
   height: min-content;
   display: flex;
@@ -253,7 +254,7 @@ p {
   width: auto;
 }
 .projects {
-  padding-top: 8vh;
+  padding-top: 5rem;
   background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
