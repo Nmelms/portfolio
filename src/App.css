@@ -209,8 +209,8 @@ p {
   cursor: pointer;
 }
 .aboutMe {
-  min-height: fit-content;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
