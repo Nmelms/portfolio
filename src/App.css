@@ -411,6 +411,12 @@ p {
   .projects {
     min-height: 100vh;
   }
+  .projectCards {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1000px) {
